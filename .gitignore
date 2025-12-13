@@ -1,0 +1,37 @@
+# temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+*.tmp
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# backups
+*backups/
+
+#production files
+production_files/*.zip
+
+# project local settings
+*.kicad_prl
+
+# Footprint association file (exported from Pcbnew)
+*.cmp
+
+# Exported BOM files
+*.xml
+*.csv
+*.tsv
+
+# generated netlist file
+*.net
+
+# Misc
+*.log
+*.raw
+*-cache
