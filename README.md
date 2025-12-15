@@ -1,7 +1,7 @@
 ﻿# temperator 
 ## Smart connected device to measure 8 temperatures and 2 AC currents
 
-temperator is a robust and easy-to-use measurement system for taking 8 temperatures and 2 AC currents. Its design is simple yet professional. No special knowledge is required for operation. In addition to the hardware, a configuration for operation with [ESPHome](https://esphome.io/) is provided in a [separate repository](docs/todo.md). This makes integration with [Home Assistant](https://www.home-assistant.io/) or other home automation systems very easy. Besides legacy Home Assistant connectivity, MQTT as interface protocol is also supported.
+temperator is a robust and easy-to-use measurement system for taking 8 temperatures and 2 AC currents. Its design is simple yet professional. No special knowledge is required for operation. In addition to the hardware, a configuration for operation with [ESPHome](https://esphome.io/) is provided in a [separate repository](https://github.com/KHit6/temperator-esphome/). This makes integration with [Home Assistant](https://www.home-assistant.io/) or other home automation systems very easy. Besides legacy Home Assistant connectivity, MQTT as interface protocol is also supported.
 
 Each measurement channel is handled individually. This avoids the very common incompatibilities and difficulties in use when connecting multiple OneWire sensors together. E.g. it takes about one minute to exchange a sensor.
 
@@ -45,7 +45,7 @@ Here are some impressions of a fully assembled temperator:
  * The bill of material (BOM) is enhanced with all mechanical parts like screws, stands and the case
 
 ## Todos
- * Currently temperator (Version V1.1) source all voltages to the temperature sensors directly from voltage the regulator of the ESP32 module. There must be  protection circuit built in to protect the regulator.
+ * Currently temperator (Version V1.1) source all voltages to the temperature sensors directly from the ESP32 module's voltage regulator. There must be  protection circuit built in to protect the regulator.
  * Sometimes DS18B20 cease to send data. It would be helpful if the supply voltage of the sensors can be switched off and on again to restart the sensors.
 
 As EDA system KiCAD 9.06 was used (Great EDA tool).
